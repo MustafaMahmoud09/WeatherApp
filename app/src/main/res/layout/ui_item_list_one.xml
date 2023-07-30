@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="@dimen/elevation"
+    app:cardCornerRadius="@dimen/marginH"
+    android:layout_marginBottom="@dimen/elevation"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_li">
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/max"
+            app:layout_constraintBottom_toBottomOf="@+id/textView7"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginH"
+            android:text="@string/min"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/zero"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="@dimen/marginH"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rain" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <TextView
+            android:id="@+id/maxId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            style="@style/infoDay"
+            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/minId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/infoDay"
+            android:layout_marginTop="@dimen/margin_small"
+            app:layout_constraintEnd_toEndOf="@+id/textView7"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/dateItemId"
+            style="@style/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginH"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="@dimen/text20"
+            android:layout_marginStart="@dimen/marginH"
+            app:layout_constraintBottom_toBottomOf="@+id/maxId"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

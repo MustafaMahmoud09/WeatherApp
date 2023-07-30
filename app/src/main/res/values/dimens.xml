@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="elevation">8dp</dimen>
+    <dimen name="marginH">16dp</dimen>
+    <dimen name="text24">24sp</dimen>
+    <dimen name="text12">12sp</dimen>
+    <dimen name="margin32">32dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="text18">18sp</dimen>
+    <dimen name="text16">16sp</dimen>
+    <dimen name="heigh">120dp</dimen>
+    <dimen name="height">120dp</dimen>
+    <dimen name="text20">20sp</dimen>
+</resources>
